@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Noticias — Gamers de Nintendo</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <a class="skip" href="#contenido">Saltar al contenido</a>
+
+    <header class="site-header">
+      <nav class="nav">
+        <a class="brand" href="index.html" aria-label="Ir a inicio">
+          <span class="brand__mark">GN</span>
+          <span class="brand__text">Gamers de Nintendo</span>
+        </a>
+
+        <button
+          class="nav__toggle"
+          id="navToggle"
+          aria-expanded="false"
+          aria-controls="navMenu"
+        >
+          ☰ <span class="sr-only">Abrir menú</span>
+        </button>
+
+        <div class="nav__menu" id="navMenu">
+          <a class="nav__link" href="index.html">Inicio</a>
+          <a class="nav__link is-active" href="noticias.html">Noticias</a>
+          <a class="nav__link" href="reseñas.html">Reseñas</a>
+          <a class="nav__link" href="contacto.html">Contacto</a>
+          <button
+            class="btn btn--ghost"
+            id="themeToggle"
+            type="button"
+            aria-label="Cambiar tema"
+          >
+            🌙
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <main id="contenido" class="container">
+      <header class="page-head">
+        <h1 id="tendencia">Noticias en tendencia (simuladas)</h1>
+        <p class="lead">
+          Filtra por categoría, busca por palabras y guarda tus favoritas.
+        </p>
+      </header>
+
+      <section class="toolbar" aria-label="Herramientas de filtrado">
+        <div class="toolbar__group">
+          <label class="form__label" for="search">Buscar</label>
+          <input
+            class="input"
+            id="search"
+            type="search"
+            placeholder="Ej: Zelda, Switch, Pokémon…"
+          />
+        </div>
+
+        <div class="toolbar__group">
+          <label class="form__label" for="category">Categoría</label>
+          <select class="input" id="category">
+            <option value="all">Todas</option>
+            <option value="lanzamientos">Lanzamientos</option>
+            <option value="eventos">Eventos</option>
+            <option value="rumores">Rumores</option>
+            <option value="guias">Guías</option>
+          </select>
+        </div>
+
+        <div class="toolbar__group toolbar__group--right">
+          <button class="btn btn--ghost" type="button" id="clearFilters">
+            Limpiar
+          </button>
+          <a class="btn" href="#favoritos">Ver favoritos</a>
+        </div>
+      </section>
+
+      <section class="news-grid" id="newsGrid" aria-label="Listado de noticias">
+        <!-- Render dinámico -->
+      </section>
+
+      <section class="grid-section" id="favoritos">
+        <header class="section-head">
+          <h2>Favoritos</h2>
+          <p>Se guardan en tu navegador (localStorage).</p>
+        </header>
+
+        <div class="cards" id="favGrid" aria-label="Noticias favoritas">
+          <!-- Render dinámico -->
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer__inner">
+        <p>© <span id="year"></span> Gamers de Nintendo — Demo front-end</p>
+        <p class="muted">Noticias “relevantes/tendencia” en modo simulación.</p>
+      </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>

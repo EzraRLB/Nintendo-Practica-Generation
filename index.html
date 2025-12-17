@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Gamers de Nintendo — Blog</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <a class="skip" href="#contenido">Saltar al contenido</a>
+
+    <header class="site-header">
+      <nav class="nav">
+        <a class="brand" href="index.html" aria-label="Ir a inicio">
+          <span class="brand__mark">GN</span>
+          <span class="brand__text">Gamers de Nintendo</span>
+        </a>
+
+        <button
+          class="nav__toggle"
+          id="navToggle"
+          aria-expanded="false"
+          aria-controls="navMenu"
+        >
+          ☰
+          <span class="sr-only">Abrir menú</span>
+        </button>
+
+        <div class="nav__menu" id="navMenu">
+          <a class="nav__link is-active" href="index.html">Inicio</a>
+          <a class="nav__link" href="noticias.html">Noticias</a>
+          <a class="nav__link" href="reseñas.html">Reseñas</a>
+          <a class="nav__link" href="contacto.html">Contacto</a>
+
+          <button
+            class="btn btn--ghost"
+            id="themeToggle"
+            type="button"
+            aria-label="Cambiar tema"
+          >
+            🌙
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <main id="contenido" class="container">
+      <section class="hero">
+        <div class="hero__content">
+          <p class="kicker">Blog gamer • Nintendo • Tendencias</p>
+          <h1>Noticias, reseñas y guías para jugadores de Nintendo</h1>
+          <p class="lead">
+            Un sitio de simulación para un proyecto front-end: navega, filtra
+            noticias, guarda favoritos y suscríbete.
+          </p>
+
+          <div class="hero__actions">
+            <a class="btn" href="noticias.html">Ver noticias en tendencia</a>
+            <a class="btn btn--ghost" href="reseñas.html">Explorar reseñas</a>
+          </div>
+
+          <div class="stats" role="list" aria-label="Resumen del blog">
+            <div class="stat" role="listitem">
+              <span class="stat__num" id="statPosts">12</span>
+              <span class="stat__label">posts</span>
+            </div>
+            <div class="stat" role="listitem">
+              <span class="stat__num" id="statFavs">0</span>
+              <span class="stat__label">favoritos</span>
+            </div>
+            <div class="stat" role="listitem">
+              <span class="stat__num">3+</span>
+              <span class="stat__label">páginas</span>
+            </div>
+          </div>
+        </div>
+
+        <figure class="hero__art" aria-label="Ilustración gamer">
+          <img
+            src="assets/hero.svg"
+            alt="Ilustración de un control y elementos gamer"
+          />
+        </figure>
+      </section>
+
+      <section class="grid-section">
+        <header class="section-head">
+          <h2>Lo más comentado</h2>
+          <p>Selección rápida de temas recurrentes en Nintendo.</p>
+        </header>
+
+        <div class="cards">
+          <article class="card">
+            <h3>Switch & sucesora</h3>
+            <p>Rumores, lanzamientos, mejoras y comparativas (simulado).</p>
+            <a class="card__link" href="noticias.html#tendencia"
+              >Ir a tendencia →</a
+            >
+          </article>
+
+          <article class="card">
+            <h3>Zelda, Mario, Pokémon</h3>
+            <p>Guías, análisis de gameplay y curiosidades.</p>
+            <a class="card__link" href="reseñas.html#franquicias"
+              >Ver reseñas →</a
+            >
+          </article>
+
+          <article class="card">
+            <h3>Indies en Nintendo</h3>
+            <p>Recomendaciones rápidas para tu backlog.</p>
+            <a class="card__link" href="reseñas.html#indies">Descubrir →</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="newsletter">
+        <div class="newsletter__box">
+          <h2>Suscripción</h2>
+          <p>
+            Recibe un resumen semanal de noticias y lanzamientos de Nintendo.
+          </p>
+
+          <form class="form" id="newsletterForm" novalidate>
+            <label class="form__label" for="email">Correo</label>
+            <div class="form__row">
+              <input
+                class="input"
+                id="email"
+                name="email"
+                type="email"
+                placeholder="tu@correo.com"
+                autocomplete="email"
+                required
+              />
+              <button class="btn" type="submit">Suscribirme</button>
+            </div>
+            <p class="form__hint" id="newsletterMsg" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer__inner">
+        <p>© <span id="year"></span> Gamers de Nintendo — Demo front-end</p>
+        <p class="muted">Hecho con HTML, CSS y JavaScript.</p>
+      </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>

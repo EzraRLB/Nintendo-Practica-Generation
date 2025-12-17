@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Contacto — Gamers de Nintendo</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <a class="skip" href="#contenido">Saltar al contenido</a>
+
+    <header class="site-header">
+      <nav class="nav">
+        <a class="brand" href="index.html" aria-label="Ir a inicio">
+          <span class="brand__mark">GN</span>
+          <span class="brand__text">Gamers de Nintendo</span>
+        </a>
+
+        <button
+          class="nav__toggle"
+          id="navToggle"
+          aria-expanded="false"
+          aria-controls="navMenu"
+        >
+          ☰ <span class="sr-only">Abrir menú</span>
+        </button>
+
+        <div class="nav__menu" id="navMenu">
+          <a class="nav__link" href="index.html">Inicio</a>
+          <a class="nav__link" href="noticias.html">Noticias</a>
+          <a class="nav__link" href="reseñas.html">Reseñas</a>
+          <a class="nav__link is-active" href="contacto.html">Contacto</a>
+          <button
+            class="btn btn--ghost"
+            id="themeToggle"
+            type="button"
+            aria-label="Cambiar tema"
+          >
+            🌙
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <main id="contenido" class="container">
+      <header class="page-head">
+        <h1>Contacto</h1>
+        <p class="lead">Formulario de ejemplo (sin backend).</p>
+      </header>
+
+      <section class="contact">
+        <div class="contact__card">
+          <h2>Escríbenos</h2>
+
+          <form class="form" id="contactForm" novalidate>
+            <label class="form__label" for="name">Nombre</label>
+            <input
+              class="input"
+              id="name"
+              name="name"
+              type="text"
+              placeholder="Tu nombre"
+              required
+              minlength="2"
+            />
+
+            <label class="form__label" for="email2">Correo</label>
+            <input
+              class="input"
+              id="email2"
+              name="email"
+              type="email"
+              placeholder="tu@correo.com"
+              required
+            />
+
+            <label class="form__label" for="topic">Tema</label>
+            <select class="input" id="topic" name="topic" required>
+              <option value="">Selecciona una opción</option>
+              <option value="colaboracion">Colaboración</option>
+              <option value="sugerencia">Sugerencia de noticia</option>
+              <option value="correccion">Corrección</option>
+            </select>
+
+            <label class="form__label" for="message">Mensaje</label>
+            <textarea
+              class="input"
+              id="message"
+              name="message"
+              rows="5"
+              placeholder="Cuéntanos…"
+              required
+              minlength="10"
+            ></textarea>
+
+            <button class="btn" type="submit">Enviar (simulado)</button>
+            <p class="form__hint" id="contactMsg" aria-live="polite"></p>
+          </form>
+        </div>
+
+        <aside class="contact__side">
+          <div class="side-card">
+            <h2>Equipo</h2>
+            <div class="avatar-row">
+              <img
+                class="avatar"
+                src="assets/avatar1.svg"
+                alt="Avatar del editor"
+              />
+              <div>
+                <p class="strong">Editor</p>
+                <p class="muted">Noticias y guías</p>
+              </div>
+            </div>
+            <div class="avatar-row">
+              <img
+                class="avatar"
+                src="assets/avatar2.svg"
+                alt="Avatar del reseñador"
+              />
+              <div>
+                <p class="strong">Reseñas</p>
+                <p class="muted">Análisis y recomendaciones</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="side-card">
+            <h2>Nota</h2>
+            <p class="muted">
+              Este sitio es una simulación: no envía correos ni guarda datos en
+              servidor.
+            </p>
+          </div>
+        </aside>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer__inner">
+        <p>© <span id="year"></span> Gamers de Nintendo — Demo front-end</p>
+        <p class="muted">Contacto con validación en JavaScript.</p>
+      </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="520" viewBox="0 0 520 520">
+  <rect width="520" height="520" rx="30" fill="#11131a"></rect>
+  <path d="M90 350 C160 260, 220 290, 280 210 C340 130, 410 140, 440 100" fill="none" stroke="#7c3aed" stroke-width="16" opacity="0.55"></path>
+  <path d="M90 410 C170 360, 250 400, 330 320 C410 240, 460 260, 470 220" fill="none" stroke="#22c55e" stroke-width="16" opacity="0.45"></path>
+  <circle cx="140" cy="160" r="42" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.14)"></circle>
+  <text x="260" y="270" text-anchor="middle" fill="rgba(255,255,255,0.8)" font-family="Arial" font-size="22">Review</text>
+</svg>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Reseñas — Gamers de Nintendo</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <a class="skip" href="#contenido">Saltar al contenido</a>
+
+    <header class="site-header">
+      <nav class="nav">
+        <a class="brand" href="index.html" aria-label="Ir a inicio">
+          <span class="brand__mark">GN</span>
+          <span class="brand__text">Gamers de Nintendo</span>
+        </a>
+
+        <button
+          class="nav__toggle"
+          id="navToggle"
+          aria-expanded="false"
+          aria-controls="navMenu"
+        >
+          ☰ <span class="sr-only">Abrir menú</span>
+        </button>
+
+        <div class="nav__menu" id="navMenu">
+          <a class="nav__link" href="index.html">Inicio</a>
+          <a class="nav__link" href="noticias.html">Noticias</a>
+          <a class="nav__link is-active" href="reseñas.html">Reseñas</a>
+          <a class="nav__link" href="contacto.html">Contacto</a>
+          <button
+            class="btn btn--ghost"
+            id="themeToggle"
+            type="button"
+            aria-label="Cambiar tema"
+          >
+            🌙
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <main id="contenido" class="container">
+      <header class="page-head">
+        <h1>Reseñas y recomendaciones</h1>
+        <p class="lead">Cards con puntuación, pros/contras y tags.</p>
+      </header>
+
+      <section class="review-grid" aria-label="Reseñas">
+        <article class="review" id="franquicias">
+          <div class="review__media">
+            <img src="assets/review1.svg" alt="Ilustración de aventura" />
+          </div>
+          <div class="review__body">
+            <h2>Aventura épica (simulada)</h2>
+            <p class="tags">
+              <span class="tag">Zelda-like</span>
+              <span class="tag">Exploración</span>
+              <span class="tag">Historia</span>
+            </p>
+            <p class="muted">Puntuación:</p>
+            <div
+              class="stars"
+              data-rating="4.5"
+              aria-label="Puntuación 4.5 de 5"
+            ></div>
+
+            <p>
+              Un mundo amplio, puzzles inteligentes y combate con ritmo. Ideal
+              para fans de exploración y coleccionables.
+            </p>
+
+            <div class="proscons">
+              <div>
+                <h3>Pros</h3>
+                <ul>
+                  <li>Diseño de niveles creativo</li>
+                  <li>Música memorable</li>
+                  <li>Gran rejugabilidad</li>
+                </ul>
+              </div>
+              <div>
+                <h3>Contras</h3>
+                <ul>
+                  <li>Curva inicial exigente</li>
+                  <li>Menús mejorables</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="review" id="indies">
+          <div class="review__media">
+            <img src="assets/review2.svg" alt="Ilustración indie" />
+          </div>
+          <div class="review__body">
+            <h2>Indie de precisión (simulado)</h2>
+            <p class="tags">
+              <span class="tag">Indie</span>
+              <span class="tag">Plataformas</span>
+              <span class="tag">Speedrun</span>
+            </p>
+            <p class="muted">Puntuación:</p>
+            <div
+              class="stars"
+              data-rating="4.0"
+              aria-label="Puntuación 4.0 de 5"
+            ></div>
+
+            <p>
+              Corto pero intenso. Perfecto para jugar en sesiones rápidas en
+              portátil.
+            </p>
+          </div>
+        </article>
+
+        <article class="review">
+          <div class="review__media">
+            <img src="assets/review3.svg" alt="Ilustración multijugador" />
+          </div>
+          <div class="review__body">
+            <h2>Multijugador de sofá (simulado)</h2>
+            <p class="tags">
+              <span class="tag">Co-op</span>
+              <span class="tag">Familia</span>
+              <span class="tag">Fiesta</span>
+            </p>
+            <p class="muted">Puntuación:</p>
+            <div
+              class="stars"
+              data-rating="3.5"
+              aria-label="Puntuación 3.5 de 5"
+            ></div>
+
+            <p>
+              Caos divertido: minijuegos rápidos, buena accesibilidad y momentos
+              “sólo una partida más”.
+            </p>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer__inner">
+        <p>© <span id="year"></span> Gamers de Nintendo — Demo front-end</p>
+        <p class="muted">Reseñas de ejemplo para la simulación.</p>
+      </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>

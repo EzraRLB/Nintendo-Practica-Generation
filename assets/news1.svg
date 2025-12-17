@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360">
+  <rect width="640" height="360" rx="26" fill="#11131a"></rect>
+  <rect x="36" y="36" width="568" height="288" rx="20" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.14)"></rect>
+  <circle cx="120" cy="120" r="50" fill="#7c3aed" opacity="0.45"></circle>
+  <circle cx="520" cy="110" r="42" fill="#22c55e" opacity="0.35"></circle>
+  <text x="320" y="190" text-anchor="middle" fill="rgba(255,255,255,0.82)" font-family="Arial" font-size="26">Nintendo News</text>
+  <text x="320" y="224" text-anchor="middle" fill="rgba(255,255,255,0.55)" font-family="Arial" font-size="16">Imagen demo</text>
+</svg>

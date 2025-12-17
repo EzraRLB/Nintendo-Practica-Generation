@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="420" viewBox="0 0 640 420">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#7c3aed"></stop>
+      <stop offset="1" stop-color="#22c55e"></stop>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="420" rx="26" fill="#0b0c10"></rect>
+  <circle cx="120" cy="120" r="90" fill="url(#g)" opacity="0.35"></circle>
+  <circle cx="520" cy="110" r="70" fill="url(#g)" opacity="0.22"></circle>
+  <rect x="150" y="150" width="340" height="170" rx="28" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.14)"></rect>
+  <rect x="210" y="200" width="220" height="70" rx="35" fill="url(#g)" opacity="0.9"></rect>
+  <circle cx="255" cy="235" r="10" fill="#fff" opacity="0.9"></circle>
+  <circle cx="290" cy="235" r="10" fill="#fff" opacity="0.9"></circle>
+  <circle cx="390" cy="228" r="12" fill="#fff" opacity="0.9"></circle>
+  <circle cx="420" cy="246" r="12" fill="#fff" opacity="0.9"></circle>
+  <text x="32" y="385" fill="rgba(255,255,255,0.75)" font-family="Arial" font-size="22">Gamers de Nintendo</text>
+</svg>
